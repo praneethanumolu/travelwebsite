@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+    string microsoftAppId = System.Configuration.ConfigurationManager.AppSettings["MicrosoftAppIdGuid"] as string;
+}
+
+
+   
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div>
+        <img src="~/images/drib_blink_bot.gif" />
+        <span class="skype-chat rounded" data-text="Chat Now" data-bot-id="@microsoftAppId"></span>
+    </div>
+</body>
+</html>
