@@ -320,6 +320,7 @@
     <Content Include="images\test_1.jpg" />
     <Content Include="images\test_2.jpg" />
     <Content Include="images\test_3.jpg" />
+    <Content Include="images\TravelAgent Application.PNG" />
     <Content Include="images\trend_1.png" />
     <Content Include="images\trend_2.png" />
     <Content Include="images\trend_3.png" />
@@ -425,6 +426,7 @@
     <Content Include="styles\bootstrap4\bootstrap.min.css" />
     <Content Include="styles\bootstrap4\bootstrap.min.js" />
     <Content Include="styles\bootstrap4\popper.js" />
+    <Content Include="styles\ChatBotCustom.css" />
     <Content Include="styles\contact_responsive.css" />
     <Content Include="styles\contact_styles.css" />
     <Content Include="styles\elements_responsive.css" />
@@ -449,7 +451,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\StaticPage\Index CSS.cshtml" />
+    <Content Include="Views\StaticPage\ChatBotPage.cshtml" />
     <Content Include="Views\StaticPage\Index.cshtml" />
+    <Content Include="Views\StaticPage\W3SchoolTemplate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

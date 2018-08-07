@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 /******************************
@@ -453,13 +453,12 @@ section
 	-o-transform: none;
 	transform: none;
 }
-.logo a
-{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	color: #f4f4f8;
-	font-weight: 800;
-	text-transform: uppercase;
+.logo a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #fcc0b5;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 .logo a img
 {

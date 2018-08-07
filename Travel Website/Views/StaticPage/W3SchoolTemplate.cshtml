@@ -1,32 +1,12 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
-<head>
-    <title>W3.CSS Template</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
-    @*<link href="https://unpkg.com/botframework-webchat/botchat.css" rel="stylesheet" />*@
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="~/Scripts/jquery-1.10.2.js"></script>
-    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://unpkg.com/botframework-webchat/botchat.js"></script>
-    <script>
-        $(document).ready(function () {
-            var x = screen.height - $('#ChatBotPage').position().top - 120;
-            console.log(x);
-            $('#ChatBotPage').css('height', x +'px');
-        });
-    </script>
-    <style>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
@@ -34,17 +14,16 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
-@@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
-</head>
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 <body class="w3-black">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
-        @*<img src="/w3images/avatar_smoke.jpg" style="width:100%">*@
-        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
-            <i class="fa fa-home w3-xxlarge active"></i>
+        <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
         </a>
         <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
@@ -53,7 +32,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </a>
         <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-eye w3-xxlarge"></i>
-            <p>SAMPLE INTERACTION</p>
+            <p>PHOTOS</p>
         </a>
         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-envelope w3-xxlarge"></i>
@@ -64,9 +43,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="#" class="w3-bar-item w3-button active" style="width:25% !important">HOME</a>
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
             <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">SAMPLES</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
             <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
     </div>
@@ -74,39 +53,36 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
         <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center w3-black" id="homes">
-            <h1 class="w3-jumbo"><span class="w3-hide-small">I am </span>JollyBus</h1>
-            <p>Your New Travel Agent</p>
-            @*<img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">*@
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Doe.</h1>
+            <p>Photographer and Web Designer.</p>
+            <img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108">
         </header>
-
-         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="home">
-             <iframe id="ChatBotPage" src="@Url.Action("ChatBotPage")" style="width:100%;background: #E0E0E0"></iframe>
-         </div>
 
         <!-- About Section -->
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-            <h2 class="w3-text-light-grey">JollyBus</h2>
+            <h2 class="w3-text-light-grey">My Name</h2>
             <hr style="width:200px" class="w3-opacity">
             <p>
-               I am a just born robo coming from silicon world to save humanity from tyring process of searching for transport facilities. I have been programmed to provide some basic Functionalities By Great Lakes Students to see how feasible I am for business scenarios.
-               (I hope that they dont kill me though.). Please do bear in mind that I am just an infant and my full capabilities have not yet been developed due to some time and resource constraints. How ever I do represent a rather rough Idea of possible Future ....... Wishing you Jolly Bussing
+                Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-            <p class="w3-wide">Searching For Busses In India</p>
+            <p class="w3-wide">Photography</p>
             <div class="w3-white">
                 <div class="w3-dark-grey" style="height:28px;width:95%"></div>
             </div>
-            <p class="w3-wide">predicting weather in an Indian city</p>
+            <p class="w3-wide">Web Design</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:55%"></div>
+                <div class="w3-dark-grey" style="height:28px;width:85%"></div>
             </div>
-            <p class="w3-wide">Some times not giving appropriate answers :p ....(Remember I am an Infant)</p>
+            <p class="w3-wide">Photoshop</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:30%"></div>
+                <div class="w3-dark-grey" style="height:28px;width:80%"></div>
             </div><br>
 
-            @*<div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
                 <div class="w3-quarter w3-section">
                     <span class="w3-xlarge">11+</span><br>
                     Partners
@@ -127,10 +103,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
             <button class="w3-button w3-light-grey w3-padding-large w3-section">
                 <i class="fa fa-download"></i> Download Resume
-            </button>*@
+            </button>
 
             <!-- Grid for pricing tables -->
-            @*<h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+            <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half w3-margin-bottom">
                     <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
@@ -165,29 +141,30 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                         </li>
                     </ul>
                 </div>
-            </div>*@
+                <!-- End Grid/Pricing tables -->
+            </div>
 
             <!-- Testimonials -->
-            @*<h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+            <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
             <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
             <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
             <p>Jane Doe saved us from a web disaster.</p><br>
 
             <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
             <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-            <p>No one is better than Jane Doe.</p>*@
+            <p>No one is better than Jane Doe.</p>
             <!-- End About Section -->
         </div>
 
         <!-- Portfolio Section -->
         <div class="w3-padding-64 w3-content" id="photos">
-            <h2 class="w3-text-light-grey">My Sample Interactions</h2>
+            <h2 class="w3-text-light-grey">My Photos</h2>
             <hr style="width:200px" class="w3-opacity">
 
             <!-- Grid for photos -->
             <div class="w3-row-padding" style="margin:0 -16px">
                 <div class="w3-half">
-                    <img src="~/images/TravelAgent Application.png" style="width:100%">
+                    <img src="/w3images/wedding.jpg" style="width:100%">
                     <img src="/w3images/rocks.jpg" style="width:100%">
                     <img src="/w3images/sailboat.jpg" style="width:100%">
                 </div>
@@ -205,15 +182,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
         <!-- Contact Section -->
         <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-            <h2 class="w3-text-light-grey">Contact Developers</h2>
+            <h2 class="w3-text-light-grey">Contact Me</h2>
             <hr style="width:200px" class="w3-opacity">
 
             <div class="w3-section">
-                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> The Great Praneeth Anumolu</p>
-                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>His Friends and Folks</p>
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
             </div><br>
-            @*<p>Lets get in touch. Send me a message:</p>
+            <p>Lets get in touch. Send me a message:</p>
 
             <form action="/action_page.php" target="_blank">
                 <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
@@ -225,12 +202,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
                         <i class="fa fa-paper-plane"></i> SEND MESSAGE
                     </button>
                 </p>
-            </form>*@
+            </form>
             <!-- End Contact Section -->
         </div>
- 
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
     </div>
 
 </body>
 </html>
-

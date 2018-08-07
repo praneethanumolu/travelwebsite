@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.botframework.com/botframework-webchat/latest/botchat.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="BotChatGoesHere" />
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/botchat.js"></script>
+    <script>
+        BotChat.App({
+            directLine: {
+                token: "uSHC2yY4I6w.cwA.VhQ.HgflA2X42C9Dg95iyB_HnLzEyLf2aoT9-Y67cpPEAqc"
+            },
+
+            user: { id: 'Travel Agent' },
+            bot: { id: 'yourbots' },
+            resize: 'detect'
+        }, document.getElementById("BotChatGoesHere"));
+    </script>
+</body>
+</html>

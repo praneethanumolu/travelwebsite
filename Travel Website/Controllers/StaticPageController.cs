@@ -13,5 +13,10 @@ namespace Travel_Website.Controllers
         {
             return View();
         }
+
+        public ActionResult ChatBotPage()
+        {
+            return View();
+        }
     }
 }
